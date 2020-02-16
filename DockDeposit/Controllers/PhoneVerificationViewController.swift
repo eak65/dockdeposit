@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PhoneVerificationViewController.swift
 //  DockDeposit
 //
 //  Created by Ethan Keiser on 2/15/20.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PhoneVerificationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
-
 }
-

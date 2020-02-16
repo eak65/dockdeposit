@@ -7,25 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29044E2023F8C10B0014C771 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E1F23F8C10B0014C771 /* MainTabBarController.swift */; };
+		29044E2223F8C7B10014C771 /* TransactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E2123F8C7B10014C771 /* TransactionTableViewController.swift */; };
+		29044E2423F8CD000014C771 /* TransactionDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E2323F8CD000014C771 /* TransactionDetailTableViewController.swift */; };
 		297E3CA323F87A2400C990C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CA223F87A2400C990C1 /* AppDelegate.swift */; };
 		297E3CA523F87A2400C990C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CA423F87A2400C990C1 /* SceneDelegate.swift */; };
-		297E3CA723F87A2400C990C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CA623F87A2400C990C1 /* ViewController.swift */; };
+		297E3CA723F87A2400C990C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CA623F87A2400C990C1 /* LoginViewController.swift */; };
 		297E3CAA23F87A2400C990C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297E3CA823F87A2400C990C1 /* Main.storyboard */; };
 		297E3CAD23F87A2400C990C1 /* DockDeposit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CAB23F87A2400C990C1 /* DockDeposit.xcdatamodeld */; };
 		297E3CAF23F87A2500C990C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 297E3CAE23F87A2500C990C1 /* Assets.xcassets */; };
 		297E3CB223F87A2500C990C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297E3CB023F87A2500C990C1 /* LaunchScreen.storyboard */; };
+		297E3CBD23F8AFDA00C990C1 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CBC23F8AFDA00C990C1 /* TextFieldCell.swift */; };
+		297E3CBF23F8B05700C990C1 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CBE23F8B05700C990C1 /* TransactionCell.swift */; };
+		297E3CC123F8B06E00C990C1 /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CC023F8B06E00C990C1 /* MapCell.swift */; };
+		297E3CC423F8B55300C990C1 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CC323F8B55300C990C1 /* SignUpTableViewController.swift */; };
+		297E3CC623F8BCFC00C990C1 /* StoryBoardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CC523F8BCFC00C990C1 /* StoryBoardFactory.swift */; };
+		297E3CC823F8BD4300C990C1 /* PhoneVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CC723F8BD4300C990C1 /* PhoneVerificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29044E1F23F8C10B0014C771 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		29044E2123F8C7B10014C771 /* TransactionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewController.swift; sourceTree = "<group>"; };
+		29044E2323F8CD000014C771 /* TransactionDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailTableViewController.swift; sourceTree = "<group>"; };
 		297E3C9F23F87A2400C990C1 /* DockDeposit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DockDeposit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		297E3CA223F87A2400C990C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		297E3CA423F87A2400C990C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		297E3CA623F87A2400C990C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		297E3CA623F87A2400C990C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		297E3CA923F87A2400C990C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		297E3CAC23F87A2400C990C1 /* DockDeposit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DockDeposit.xcdatamodel; sourceTree = "<group>"; };
 		297E3CAE23F87A2500C990C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		297E3CB123F87A2500C990C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		297E3CB323F87A2500C990C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		297E3CBC23F8AFDA00C990C1 /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		297E3CBE23F8B05700C990C1 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		297E3CC023F8B06E00C990C1 /* MapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
+		297E3CC323F8B55300C990C1 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
+		297E3CC523F8BCFC00C990C1 /* StoryBoardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardFactory.swift; sourceTree = "<group>"; };
+		297E3CC723F8BD4300C990C1 /* PhoneVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneVerificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +76,11 @@
 		297E3CA123F87A2400C990C1 /* DockDeposit */ = {
 			isa = PBXGroup;
 			children = (
+				297E3CC923F8BDF900C990C1 /* Factories */,
+				297E3CC223F8B53900C990C1 /* Controllers */,
+				297E3CBB23F8AFBD00C990C1 /* Cell */,
 				297E3CA223F87A2400C990C1 /* AppDelegate.swift */,
 				297E3CA423F87A2400C990C1 /* SceneDelegate.swift */,
-				297E3CA623F87A2400C990C1 /* ViewController.swift */,
 				297E3CA823F87A2400C990C1 /* Main.storyboard */,
 				297E3CAE23F87A2500C990C1 /* Assets.xcassets */,
 				297E3CB023F87A2500C990C1 /* LaunchScreen.storyboard */,
@@ -68,6 +88,37 @@
 				297E3CAB23F87A2400C990C1 /* DockDeposit.xcdatamodeld */,
 			);
 			path = DockDeposit;
+			sourceTree = "<group>";
+		};
+		297E3CBB23F8AFBD00C990C1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				297E3CBC23F8AFDA00C990C1 /* TextFieldCell.swift */,
+				297E3CBE23F8B05700C990C1 /* TransactionCell.swift */,
+				297E3CC023F8B06E00C990C1 /* MapCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		297E3CC223F8B53900C990C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				297E3CA623F87A2400C990C1 /* LoginViewController.swift */,
+				297E3CC323F8B55300C990C1 /* SignUpTableViewController.swift */,
+				297E3CC723F8BD4300C990C1 /* PhoneVerificationViewController.swift */,
+				29044E1F23F8C10B0014C771 /* MainTabBarController.swift */,
+				29044E2123F8C7B10014C771 /* TransactionTableViewController.swift */,
+				29044E2323F8CD000014C771 /* TransactionDetailTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		297E3CC923F8BDF900C990C1 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				297E3CC523F8BCFC00C990C1 /* StoryBoardFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +192,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				297E3CA723F87A2400C990C1 /* ViewController.swift in Sources */,
+				297E3CBF23F8B05700C990C1 /* TransactionCell.swift in Sources */,
+				297E3CA723F87A2400C990C1 /* LoginViewController.swift in Sources */,
+				29044E2023F8C10B0014C771 /* MainTabBarController.swift in Sources */,
 				297E3CAD23F87A2400C990C1 /* DockDeposit.xcdatamodeld in Sources */,
 				297E3CA323F87A2400C990C1 /* AppDelegate.swift in Sources */,
+				29044E2423F8CD000014C771 /* TransactionDetailTableViewController.swift in Sources */,
 				297E3CA523F87A2400C990C1 /* SceneDelegate.swift in Sources */,
+				297E3CC623F8BCFC00C990C1 /* StoryBoardFactory.swift in Sources */,
+				297E3CC823F8BD4300C990C1 /* PhoneVerificationViewController.swift in Sources */,
+				29044E2223F8C7B10014C771 /* TransactionTableViewController.swift in Sources */,
+				297E3CC123F8B06E00C990C1 /* MapCell.swift in Sources */,
+				297E3CBD23F8AFDA00C990C1 /* TextFieldCell.swift in Sources */,
+				297E3CC423F8B55300C990C1 /* SignUpTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
