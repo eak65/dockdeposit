@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var signUpButton: UIButton!
-    private let storyBoardFactory = StoryBoardFactory()
+    private let storyBoardFactory = ControllerFactory()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

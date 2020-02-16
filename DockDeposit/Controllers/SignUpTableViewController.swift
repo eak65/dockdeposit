@@ -11,7 +11,7 @@ import UIKit
 class SignUpTableViewController: UITableViewController {
 
     let placeHolder = ["First Name", "Last Name", "Email", "Password"]
-    private let sbf = StoryBoardFactory()
+    private let sbf = ControllerFactory()
     
     override func viewDidLoad() {
         super.viewDidLoad()

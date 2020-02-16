@@ -47,7 +47,7 @@ class TransactionTableViewController: UITableViewController {
         return cell
     }
     @objc func create() {
-    navigationController?.pushViewController(StoryBoardFactory().createTransactionDetailTableViewController(), animated: true)
+    navigationController?.pushViewController(ControllerFactory().createTransactionDetailTableViewController(), animated: true)
         
     }
     func action_ButtonBottom(indexPath: IndexPath, button: UIButton) {

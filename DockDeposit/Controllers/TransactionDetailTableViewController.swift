@@ -14,8 +14,7 @@ class TransactionDetailTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.esti
-        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(TransactionDetailTableViewController.save))
     }
 
     // MARK: - Table view data source
@@ -46,5 +45,10 @@ class TransactionDetailTableViewController: UITableViewController {
             
            return mapCell
         }
+    }
+    
+    @objc func save() {
+        
+        navigationController?.popViewController(animated: true)
     }
 }
