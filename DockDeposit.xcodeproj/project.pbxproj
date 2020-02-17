@@ -17,6 +17,9 @@
 		29044E3123FA488C0014C771 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E3023FA488C0014C771 /* Wrapper.swift */; };
 		29044E3323FA4B5E0014C771 /* ApiResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E3223FA4B5E0014C771 /* ApiResource.swift */; };
 		29044E3523FA4B980014C771 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E3423FA4B970014C771 /* User.swift */; };
+		29044E3923FA5C870014C771 /* UserResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E3823FA5C870014C771 /* UserResource.swift */; };
+		29044E3B23FA74E50014C771 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E3A23FA74E50014C771 /* Transaction.swift */; };
+		29044E3E23FA783B0014C771 /* TransactionTableModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E3D23FA783B0014C771 /* TransactionTableModelView.swift */; };
 		297E3CA323F87A2400C990C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CA223F87A2400C990C1 /* AppDelegate.swift */; };
 		297E3CA523F87A2400C990C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CA423F87A2400C990C1 /* SceneDelegate.swift */; };
 		297E3CA723F87A2400C990C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CA623F87A2400C990C1 /* LoginViewController.swift */; };
@@ -43,6 +46,9 @@
 		29044E3023FA488C0014C771 /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
 		29044E3223FA4B5E0014C771 /* ApiResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResource.swift; sourceTree = "<group>"; };
 		29044E3423FA4B970014C771 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		29044E3823FA5C870014C771 /* UserResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResource.swift; sourceTree = "<group>"; };
+		29044E3A23FA74E50014C771 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		29044E3D23FA783B0014C771 /* TransactionTableModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableModelView.swift; sourceTree = "<group>"; };
 		297E3C9F23F87A2400C990C1 /* DockDeposit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DockDeposit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		297E3CA223F87A2400C990C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		297E3CA423F87A2400C990C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 			children = (
 				29044E3023FA488C0014C771 /* Wrapper.swift */,
 				29044E3423FA4B970014C771 /* User.swift */,
+				29044E3A23FA74E50014C771 /* Transaction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,8 +110,17 @@
 			isa = PBXGroup;
 			children = (
 				29044E3223FA4B5E0014C771 /* ApiResource.swift */,
+				29044E3823FA5C870014C771 /* UserResource.swift */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		29044E3C23FA78240014C771 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				29044E3D23FA783B0014C771 /* TransactionTableModelView.swift */,
+			);
+			path = ModelView;
 			sourceTree = "<group>";
 		};
 		297E3C9623F87A2400C990C1 = {
@@ -126,6 +142,7 @@
 		297E3CA123F87A2400C990C1 /* DockDeposit */ = {
 			isa = PBXGroup;
 			children = (
+				29044E3C23FA78240014C771 /* ModelView */,
 				29044E2F23FA487C0014C771 /* Model */,
 				29044E2723FA42660014C771 /* Network */,
 				297E3CC923F8BDF900C990C1 /* Factories */,
@@ -245,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29044E3B23FA74E50014C771 /* Transaction.swift in Sources */,
 				297E3CBF23F8B05700C990C1 /* TransactionCell.swift in Sources */,
 				297E3CA723F87A2400C990C1 /* LoginViewController.swift in Sources */,
 				29044E2623F8DB110014C771 /* AccountTableViewController.swift in Sources */,
@@ -253,6 +271,7 @@
 				297E3CAD23F87A2400C990C1 /* DockDeposit.xcdatamodeld in Sources */,
 				297E3CA323F87A2400C990C1 /* AppDelegate.swift in Sources */,
 				29044E2423F8CD000014C771 /* TransactionDetailTableViewController.swift in Sources */,
+				29044E3E23FA783B0014C771 /* TransactionTableModelView.swift in Sources */,
 				29044E3523FA4B980014C771 /* User.swift in Sources */,
 				297E3CA523F87A2400C990C1 /* SceneDelegate.swift in Sources */,
 				29044E2C23FA44360014C771 /* ImageRequest.swift in Sources */,
@@ -264,6 +283,7 @@
 				297E3CBD23F8AFDA00C990C1 /* TextFieldCell.swift in Sources */,
 				297E3CC423F8B55300C990C1 /* SignUpTableViewController.swift in Sources */,
 				29044E2E23FA45E10014C771 /* ApiRequest.swift in Sources */,
+				29044E3923FA5C870014C771 /* UserResource.swift in Sources */,
 				29044E3323FA4B5E0014C771 /* ApiResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

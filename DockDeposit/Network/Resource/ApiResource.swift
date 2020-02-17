@@ -15,7 +15,7 @@ protocol ApiResource {
 
 extension ApiResource {
     var url: URL {
-        var components = URLComponents(string: "https://host")!
+        var components = URLComponents(string: "http://localhost:3000/")!
         components.path = methodPath
         return components.url!
     }

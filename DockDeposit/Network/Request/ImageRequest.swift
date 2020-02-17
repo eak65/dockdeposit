@@ -12,10 +12,11 @@ import UIKit
 class ImageRequest {
     let url: URL
     let method: String
-    
-    init (url: URL, method: String) {
+    var body : Data?
+    init (url: URL, method: String = "GET", body: Data? = nil) {
         self.url = url
         self.method = method
+        self.body = body
     }
 }
 
@@ -26,6 +27,6 @@ extension ImageRequest: NetworkRequest {
     }
     
     func load(withCompletion completion: @escaping (UIImage?) -> Void) {
-        load(self.url, self.method, withCompletion: completion)
+        load(self.url, self.method, body: body, withCompletion: completion)
     }
 }

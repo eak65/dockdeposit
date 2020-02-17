@@ -17,6 +17,14 @@ class TransactionCell: UITableViewCell {
     @IBOutlet var topLeftImageView: UIImageView!
     var action_ButtonBottom : ((UIButton)->())?
     
+    var transactionModelView : TransactionTableModelView? {
+        didSet {
+            self.topTextLabel.text = transactionModelView?.title
+            self.topRightTextLabel.text = transactionModelView?.fee
+            self.middleTextLabel.text = transactionModelView?.description
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

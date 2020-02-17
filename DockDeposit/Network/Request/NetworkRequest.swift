@@ -16,17 +16,18 @@ protocol NetworkRequest: AnyObject {
 
 //this base request has the missing information provided by the protocol.
 extension NetworkRequest {
-    func load(_ url: URL, _ method: String,_ body: Codable? = nil, withCompletion completion: @escaping (ModelType?) -> Void) {
-        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: .main)
+    func load(_ url: URL, _ method: String, body: Data? = nil, withCompletion completion: @escaping (ModelType?) -> Void) {
+        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: nil)
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method
-        
-        let task = session.dataTask(with: urlRequest, completionHandler: { [weak self] (data: Data?, response: URLResponse?, error: Error?) -> Void in
-                guard let data = data else {
+        urlRequest.httpBody = body
+        let task = session.dataTask(with: urlRequest, completionHandler: {  (responseData: Data?, response: URLResponse?, error: Error?) -> Void in
+          //  guard let wSelf = self else { return }
+                guard let responseData = responseData else {
                     completion(nil)
                     return
                 }
-                completion(self?.decode(data))
+                completion(self.decode(responseData))
             })
         task.resume()
     }

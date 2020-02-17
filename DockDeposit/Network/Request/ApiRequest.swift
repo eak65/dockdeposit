@@ -11,20 +11,29 @@ import Foundation
 class ApiRequest <Resource: ApiResource> {
     let resource: Resource
     let method: String
-    init(resource: Resource, method: String) {
+    var data: Data?
+    init(resource: Resource, method: String = "GET", data: Data? = nil) {
         self.resource = resource
         self.method = method
+        self.data = data
     }
 }
 
 // conforms NetworkRequest protocol
 extension ApiRequest: NetworkRequest {
     func decode(_ data: Data) -> [Resource.ModelType]? {
-        let wrapper = try? JSONDecoder().decode(Wrapper<Resource.ModelType>.self, from: data)
-        return wrapper?.items
+        do {
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .iso8601
+            let wrapper = try decoder.decode(Wrapper<Resource.ModelType>.self, from: data)
+            return wrapper.items
+        } catch {
+            print(error.localizedDescription)
+            return nil
+        }
     }
     
     func load(withCompletion completion: @escaping ([Resource.ModelType]?) -> Void) {
-        load(self.resource.url, self.method, withCompletion: completion)
+        load(self.resource.url, self.method, body: data, withCompletion: completion)
     }
 }
