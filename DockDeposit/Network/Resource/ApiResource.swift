@@ -7,7 +7,7 @@
 //
 
 import Foundation
-// Describes where the Resource is located
+// Describes a host and allows conformer to describe path
 protocol ApiResource {
     associatedtype ModelType: Decodable
     var methodPath: String { get }

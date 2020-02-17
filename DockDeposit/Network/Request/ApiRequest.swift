@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ApiRequest <Resource: ApiResource> {
+class ApiRequest <Resource: ApiResource> : NSObject, URLSessionDelegate {
     let resource: Resource
     let method: String
     var data: Data?
@@ -34,6 +34,6 @@ extension ApiRequest: NetworkRequest {
     }
     
     func load(withCompletion completion: @escaping ([Resource.ModelType]?) -> Void) {
-        load(self.resource.url, self.method, body: data, withCompletion: completion)
+        load(self.resource.url, self.method, body: data, delegate:self, withCompletion: completion)
     }
 }

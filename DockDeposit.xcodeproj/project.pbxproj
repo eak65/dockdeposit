@@ -20,6 +20,7 @@
 		29044E3923FA5C870014C771 /* UserResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E3823FA5C870014C771 /* UserResource.swift */; };
 		29044E3B23FA74E50014C771 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E3A23FA74E50014C771 /* Transaction.swift */; };
 		29044E3E23FA783B0014C771 /* TransactionTableModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E3D23FA783B0014C771 /* TransactionTableModelView.swift */; };
+		29044E4123FB18920014C771 /* DataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E4023FB18920014C771 /* DataCoordinator.swift */; };
 		297E3CA323F87A2400C990C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CA223F87A2400C990C1 /* AppDelegate.swift */; };
 		297E3CA523F87A2400C990C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CA423F87A2400C990C1 /* SceneDelegate.swift */; };
 		297E3CA723F87A2400C990C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CA623F87A2400C990C1 /* LoginViewController.swift */; };
@@ -49,6 +50,7 @@
 		29044E3823FA5C870014C771 /* UserResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResource.swift; sourceTree = "<group>"; };
 		29044E3A23FA74E50014C771 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		29044E3D23FA783B0014C771 /* TransactionTableModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableModelView.swift; sourceTree = "<group>"; };
+		29044E4023FB18920014C771 /* DataCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCoordinator.swift; sourceTree = "<group>"; };
 		297E3C9F23F87A2400C990C1 /* DockDeposit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DockDeposit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		297E3CA223F87A2400C990C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		297E3CA423F87A2400C990C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 			path = ModelView;
 			sourceTree = "<group>";
 		};
+		29044E3F23FB18830014C771 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				29044E4023FB18920014C771 /* DataCoordinator.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 		297E3C9623F87A2400C990C1 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +152,7 @@
 		297E3CA123F87A2400C990C1 /* DockDeposit */ = {
 			isa = PBXGroup;
 			children = (
+				29044E3F23FB18830014C771 /* Singleton */,
 				29044E3C23FA78240014C771 /* ModelView */,
 				29044E2F23FA487C0014C771 /* Model */,
 				29044E2723FA42660014C771 /* Network */,
@@ -268,6 +279,7 @@
 				29044E2623F8DB110014C771 /* AccountTableViewController.swift in Sources */,
 				29044E2023F8C10B0014C771 /* MainTabBarController.swift in Sources */,
 				29044E2923FA42830014C771 /* NetworkRequest.swift in Sources */,
+				29044E4123FB18920014C771 /* DataCoordinator.swift in Sources */,
 				297E3CAD23F87A2400C990C1 /* DockDeposit.xcdatamodeld in Sources */,
 				297E3CA323F87A2400C990C1 /* AppDelegate.swift in Sources */,
 				29044E2423F8CD000014C771 /* TransactionDetailTableViewController.swift in Sources */,

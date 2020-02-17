@@ -10,6 +10,11 @@ import Foundation
 
 struct UserResource : ApiResource {
     typealias ModelType = User
+    var id: Int?
+    init(id: Int) {
+        self.id = id
+        self.methodPath = "\(self.methodPath)/\(id)"
+    }
     var methodPath: String = "/users"
 }
 
