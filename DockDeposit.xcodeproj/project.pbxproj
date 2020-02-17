@@ -11,6 +11,12 @@
 		29044E2223F8C7B10014C771 /* TransactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E2123F8C7B10014C771 /* TransactionTableViewController.swift */; };
 		29044E2423F8CD000014C771 /* TransactionDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E2323F8CD000014C771 /* TransactionDetailTableViewController.swift */; };
 		29044E2623F8DB110014C771 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E2523F8DB110014C771 /* AccountTableViewController.swift */; };
+		29044E2923FA42830014C771 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E2823FA42830014C771 /* NetworkRequest.swift */; };
+		29044E2C23FA44360014C771 /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E2B23FA44360014C771 /* ImageRequest.swift */; };
+		29044E2E23FA45E10014C771 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E2D23FA45E10014C771 /* ApiRequest.swift */; };
+		29044E3123FA488C0014C771 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E3023FA488C0014C771 /* Wrapper.swift */; };
+		29044E3323FA4B5E0014C771 /* ApiResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E3223FA4B5E0014C771 /* ApiResource.swift */; };
+		29044E3523FA4B980014C771 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29044E3423FA4B970014C771 /* User.swift */; };
 		297E3CA323F87A2400C990C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CA223F87A2400C990C1 /* AppDelegate.swift */; };
 		297E3CA523F87A2400C990C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CA423F87A2400C990C1 /* SceneDelegate.swift */; };
 		297E3CA723F87A2400C990C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E3CA623F87A2400C990C1 /* LoginViewController.swift */; };
@@ -31,6 +37,12 @@
 		29044E2123F8C7B10014C771 /* TransactionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewController.swift; sourceTree = "<group>"; };
 		29044E2323F8CD000014C771 /* TransactionDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailTableViewController.swift; sourceTree = "<group>"; };
 		29044E2523F8DB110014C771 /* AccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
+		29044E2823FA42830014C771 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		29044E2B23FA44360014C771 /* ImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
+		29044E2D23FA45E10014C771 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		29044E3023FA488C0014C771 /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
+		29044E3223FA4B5E0014C771 /* ApiResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResource.swift; sourceTree = "<group>"; };
+		29044E3423FA4B970014C771 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		297E3C9F23F87A2400C990C1 /* DockDeposit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DockDeposit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		297E3CA223F87A2400C990C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		297E3CA423F87A2400C990C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +71,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29044E2723FA42660014C771 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				29044E3723FA53A00014C771 /* Resource */,
+				29044E3623FA538C0014C771 /* Request */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		29044E2F23FA487C0014C771 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				29044E3023FA488C0014C771 /* Wrapper.swift */,
+				29044E3423FA4B970014C771 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		29044E3623FA538C0014C771 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				29044E2823FA42830014C771 /* NetworkRequest.swift */,
+				29044E2D23FA45E10014C771 /* ApiRequest.swift */,
+				29044E2B23FA44360014C771 /* ImageRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		29044E3723FA53A00014C771 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				29044E3223FA4B5E0014C771 /* ApiResource.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		297E3C9623F87A2400C990C1 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +126,8 @@
 		297E3CA123F87A2400C990C1 /* DockDeposit */ = {
 			isa = PBXGroup;
 			children = (
+				29044E2F23FA487C0014C771 /* Model */,
+				29044E2723FA42660014C771 /* Network */,
 				297E3CC923F8BDF900C990C1 /* Factories */,
 				297E3CC223F8B53900C990C1 /* Controllers */,
 				297E3CBB23F8AFBD00C990C1 /* Cell */,
@@ -199,16 +249,22 @@
 				297E3CA723F87A2400C990C1 /* LoginViewController.swift in Sources */,
 				29044E2623F8DB110014C771 /* AccountTableViewController.swift in Sources */,
 				29044E2023F8C10B0014C771 /* MainTabBarController.swift in Sources */,
+				29044E2923FA42830014C771 /* NetworkRequest.swift in Sources */,
 				297E3CAD23F87A2400C990C1 /* DockDeposit.xcdatamodeld in Sources */,
 				297E3CA323F87A2400C990C1 /* AppDelegate.swift in Sources */,
 				29044E2423F8CD000014C771 /* TransactionDetailTableViewController.swift in Sources */,
+				29044E3523FA4B980014C771 /* User.swift in Sources */,
 				297E3CA523F87A2400C990C1 /* SceneDelegate.swift in Sources */,
+				29044E2C23FA44360014C771 /* ImageRequest.swift in Sources */,
 				297E3CC623F8BCFC00C990C1 /* ControllerFactory.swift in Sources */,
+				29044E3123FA488C0014C771 /* Wrapper.swift in Sources */,
 				297E3CC823F8BD4300C990C1 /* PhoneVerificationViewController.swift in Sources */,
 				29044E2223F8C7B10014C771 /* TransactionTableViewController.swift in Sources */,
 				297E3CC123F8B06E00C990C1 /* MapCell.swift in Sources */,
 				297E3CBD23F8AFDA00C990C1 /* TextFieldCell.swift in Sources */,
 				297E3CC423F8B55300C990C1 /* SignUpTableViewController.swift in Sources */,
+				29044E2E23FA45E10014C771 /* ApiRequest.swift in Sources */,
+				29044E3323FA4B5E0014C771 /* ApiResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

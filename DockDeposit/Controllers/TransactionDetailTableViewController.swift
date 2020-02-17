@@ -35,7 +35,10 @@ class TransactionDetailTableViewController: UITableViewController {
             guard let textCell = tableView.dequeueReusableCell(withIdentifier: "\(TextFieldCell.self)", for: indexPath) as? TextFieldCell else {
                 fatalError()
             }
+            
             textCell.textField.placeholder = placeholders[indexPath.row]
+            //textCell.textField.delegate = self;
+            
             return textCell
         }
         else {

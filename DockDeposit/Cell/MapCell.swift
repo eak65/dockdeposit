@@ -16,7 +16,6 @@ class MapCell: UITableViewCell, MKMapViewDelegate {
             self.mapView.delegate = self
             self.mapView.mapType = .standard
             self.mapView.showsUserLocation = true
-
         }
     }
     override func awakeFromNib() {

@@ -47,7 +47,10 @@ class AccountTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        navigationController?.present(ControllerFactory().createLoginViewController(), animated: true, completion: nil)
+        
+        if indexPath.row == tableView.numberOfRows(inSection: 0) - 1 {
+            navigationController?.present(ControllerFactory().createLoginViewController(), animated: true, completion: nil)
+        }
         
     }
     
